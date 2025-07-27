@@ -365,7 +365,7 @@ for _, url in ipairs(urls) do
         warn("Erro ao carregar script: " .. url)
     end
 end
-
+end)
 buttons["Auto Kill a todos"].MouseButton1Click:Connect(function()
     local url = "https://raw.githubusercontent.com/SadOz8/Stuffs-2/refs/heads/main/Crack7"
     local success, response = pcall(function()
